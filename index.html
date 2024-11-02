@@ -1,1 +1,57 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black; 
+        }
+        input[type="text"] {
+            width: 300px; 
+            height: 40px; 
+            font-size: 18px; 
+            padding: 10px; 
+            border: 2px solid #000000; 
+            border-radius: 5px; 
+            outline: none; 
+            background-color: rgb(230, 230, 230);  
+        }input[type="text"]:focus {
+            border-color: #000000; 
+            
+        }
+        button {
+            margin: 20px; 
+            padding: 20px 50px; 
+            font-size: 20px; 
+            cursor: pointer; 
+            background-color: rgb(83, 83, 83);        
+        }
+    
+        .small-text {
+            position: absolute; 
+            bottom: 10px; 
+            left: 10px; 
+            color: rgb(42, 41, 41); 
+            font-size: 12px; 
+            font-family: 'Franklin Gothic Medium';
+        }
+    </style>
+
+</head>
+<body>
+    <input type="text" id="password">
+    <button id="submit"></button>
+    <p id="message"></p>
+    <audio id="laughSound" src="laugh.mp3"></audio>
+    <p class="small-text"> room 0</p>
+</body>
+</html>
